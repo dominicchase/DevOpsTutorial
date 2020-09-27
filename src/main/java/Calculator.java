@@ -23,7 +23,7 @@ public class Calculator{
     }
 
     public double power(double x, int power){
-        return Math.pow(x, 2);
+        return Math.pow(x, power);
     }
 
     public static void main(String args[]){
@@ -35,6 +35,7 @@ public class Calculator{
             System.out.print("Please Enter a command: ");
             String line = scan.nextLine();
             String[] input = line.split(" ");
+            System.out.print(input);
 
             switch(input[0]){
                 case "-a":
